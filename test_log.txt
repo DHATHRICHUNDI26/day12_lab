@@ -1,0 +1,135 @@
+Q1 | How many casual leave days are provided annually?
+Expected: [['12']]
+Actual: Based on the provided HR Leave Policy:
+
+Every employee receives 12 days of casual leave (CL) per calendar year. 
+
+**Source:** hr_Leave_Policy.txt - Section 1 (Leave types and balance)
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q2 | How many sick leave days are provided annually?
+Expected: [['8']]
+Actual: Based on the provided HR Leave Policy:
+
+Employees receive 8 days of sick leave (SL) per calendar year. 
+
+**Source:** hr_Leave_Policy.txt - Section 1
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q3 | When are casual and sick leaves credited?
+Expected: [['January 1', '1 January']]
+Actual: Casual and sick leaves are credited on 1 January.
+
+**Source:** hr_Leave_Policy.txt - Section 1
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q4 | How early should employees apply for casual leave?
+Expected: [['2 working days']]
+Actual: Employees must apply for casual leave at least 2 working days in advance.
+
+**Source:** hr_Leave_Policy.txt - Section 2
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q5 | When can employees apply for sick leave?
+Expected: [['same day'], ['2 working days']]
+Actual: Based on the provided HR Leave Policy, sick leave can be applied on the same day, or within 2 working days after returning to work.
+
+**Source:** `hr_Leave_Policy.txt - Section 2`
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q6 | Is half-day casual leave allowed?
+Expected: [['half-day', 'half day'], ['allowed']]
+Actual: Yes, half-day leave is allowed for casual leave.
+
+Source: hr_Leave_Policy.txt - Section 3
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q7 | Is half-day sick leave allowed?
+Expected: [['half-day', 'half day'], ['allowed']]
+Actual: Yes, half-day sick leave is allowed. 
+
+Source: hr_Leave_Policy.txt - Section 3
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q8 | Who approves leave requests?
+Expected: [['reporting manager']]
+Actual: Based on the provided HR policy context:
+
+The reporting manager approves or rejects a leave request. If the manager is on leave, the request goes to the backup approver named in the HR portal.
+
+**Source:** `hr_Leave_Policy.txt - Section 4 (Approval)`
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q9 | How many unused casual leave days can be carried forward?
+Expected: [['5']]
+Actual: Based on the provided HR Leave Policy:
+
+Up to 5 days of unused casual leave can be carried over to the next year.
+
+**Source:** hr_Leave_Policy.txt - Section 7
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q10 | When must carried-forward casual leave be used?
+Expected: [['March 31', '31 March']]
+Actual: Carried-over casual leave must be used by 31 March, or else it lapses.
+
+**Source:** hr_Leave_Policy.txt - Section 7
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q11 | Can sick leave be carried forward?
+Expected: [['cannot', 'not allowed', 'no']]
+Actual: No, sick leave cannot be carried over. 
+
+Source: hr_Leave_Policy.txt - Section 7
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q12 | What happens to unused carried-forward casual leave after March 31?
+Expected: [['lapse', 'expire']]
+Actual: Based on the provided HR Leave Policy:
+
+Carried-over casual leave days must be used by 31 March, or they lapse.
+
+**Source:** [hr_Leave_Policy.txt - Section 7]
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q13 | How many days of maternity leave are provided?
+Expected: [['not specified', 'not available']]
+Actual: Based on the provided HR Leave Policy, information regarding maternity leave is not specified in the HR Leave Policy. 
+
+**Source:** hr_Leave_Policy.txt (Information is missing from the entire document).
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q14 | What percentage of salary is deducted for Loss of Pay?
+Expected: [['not specified', 'not available']]
+Actual: Based on the provided HR policy context, the percentage of salary deducted for Loss of Pay is not specified in the HR Leave Policy (Source: hr_Leave_Policy.txt - Section 5).
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+Q15 | Can employees work from home while on sick leave?
+Expected: [['not specified', 'not available']]
+Actual: Based on the provided HR policy, whether employees can work from home while on sick leave is not specified in the provided HR Leave Policy (hr_Leave_Policy.txt).
+Retrieved Sources: ['hr_Leave_Policy.txt - Section 1']
+Status: PASS
+------------------------------------------------------------
+
+========== SMOKE TEST SUMMARY ==========
+
+Total Tests : 15
+Passed      : 15
+Failed      : 0
+Errors      : 0
+
+Overall Result: PASS
